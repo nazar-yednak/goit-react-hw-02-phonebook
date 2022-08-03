@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Form from './Form/Form';
-import Contact from './Contact/Contact';
+import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 import { Wrapper } from './App.styled';
 class App extends Component {
@@ -39,7 +39,7 @@ class App extends Component {
         <Form onSubmit={this.formSubmitHandler} />
         <h2>Contacts</h2>
         <Filter value={this.state.filter} onChange={this.changeFilter} />
-        <Contact
+        <ContactList
           contacts={visibleContacts}
           onDeleteContact={this.deleteContact}
         />

@@ -5,7 +5,7 @@ import {
   DeleteButton,
   ContactItem,
   ContastText,
-} from './Contact.styled';
+} from './ContactList.styled';
 
 class Contact extends Component {
   render() {
